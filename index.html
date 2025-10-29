@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat energy</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="header__wrap">
+      <a class="header__logo" href="#">
+        <picture class="header__logo-picture">
+          <source srcset="image/logo-tabl.svg" media="(min-width: 708px)">
+          <source srcset="image/logo-desk.svg" media="(min-width: 1220px)">
+          <img class="header__logo-img" src="image/logo-mobile.svg" alt="логотип рыжий кот">
+        </picture>
+      </a>
+      <img class="header__logo-text" src="image/logo-text.svg" alt="cat energy название компании">
+      <button class="header__button" type="button">
+        <span class="visually-hidden">кнопка открыть меню</span>
+      </button>
+      <button class="header__button-close visually-hidden" type="button">
+        <span class="visually-hidden">кнопка закрыть</span>
+      </button>
+    </div>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">главная</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">каталог продукции</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__wrap">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="hero__action">
+          Занялся собой? Займись котом!
+        </p>
+      </div>
+
+      <button class="button hero__buttons">
+        подобрать программу
+      </button>
+    </div>
+  </section>
+
 </body>
+
 </html>

@@ -1,0 +1,77 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+
+.header {
+  box-sizing: border-box;
+}
+
+.header__wrap {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  min-width: 280px;
+  padding: 13px 20px 14px;
+  @include m.wrapper;
+}
+
+.header__button {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: v.$color-font;
+}
+
+.header__button::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: v.$color-font;
+}
+
+.header__button::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: v.$color-font;
+}
+
+.header__button-close {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: v.$color-font;
+  transform: rotate(45deg);
+}
+
+.header__button-close::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: v.$color-font;
+  transform: rotate(90deg);
+}
+
+.header__item {
+  text-align: center;
+  align-items: center;
+  padding: 22px 0 24px;
+  border-top: 1px solid v.$color-line;
+}
+
+.header__link {
+  font-size: 20px;
+  font-family: v.$font;
+  font-weight: 400;
+  color: v.$color-font;
+  text-transform: uppercase;
+}
