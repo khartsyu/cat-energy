@@ -1,0 +1,57 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.advantages {
+  width: 100%;
+  @include m.wrapper;
+  padding: 20px 20px 49px;
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+  color: v.$color-font;
+  @include m.title;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding-left: 80px;
+  color: v.$color-font3;
+  @include m.text;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: v.$color-main;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.advantages__item:nth-of-type(1)::before {
+  background-image: url("../image/icon_sheet.svg");
+}
+
+.advantages__item:nth-of-type(2)::before {
+  background-image: url("../image/icon_water.svg");
+}
+
+.advantages__item:nth-of-type(3)::before {
+  background-image: url("../image/icon_eat.svg");
+}
+
+.advantages__item:nth-of-type(4)::before {
+  background-image: url("../image/icon_clock.svg");
+}

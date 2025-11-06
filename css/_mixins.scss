@@ -1,3 +1,17 @@
+@use "./variables" as v;
+
 @mixin wrapper() {
   margin: 0 auto;
+}
+
+@mixin title() {
+  font-family: v.$font;
+  font-size: 36px;
+  line-height: 1;
+}
+
+@mixin text() {
+  font-family: v.$font2;
+  font-size: 14px;
+  line-height: 1.3;
 }

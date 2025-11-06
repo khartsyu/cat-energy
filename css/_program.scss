@@ -1,0 +1,103 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.program {
+  width: 100%;
+  padding: 0 20px;
+  @include m.wrapper;
+}
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.program__item {
+  position: relative;
+  padding: 30px 30px 18px 20px;
+  background-color: v.$color-basic-container;
+}
+
+.program__icon {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: v.$color-main;
+}
+
+.program__item:first-of-type::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 35px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../image/cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.program__item:nth-of-type(2)::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 19px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../image/cat-pro.svg");
+  background-repeat: no-repeat;
+}
+
+.program__title {
+  padding-left: 70px;
+  margin-bottom: 29px;
+  font-family: v.$font;
+  font-size: 24px;
+  line-height: 1;
+  color: v.$color-font;
+  text-transform: uppercase;
+}
+
+.program__text {
+  position: relative;
+  margin-bottom: 38px;
+  color: v.$color-font3;
+  @include m.text;
+}
+
+.program__text::after {
+  position: absolute;
+  content: "";
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: v.$color-container;
+}
+
+.program__catalog {
+  position: relative;
+  font-family: v.$font;
+  font-size: 16px;
+  line-height: 1;
+  color: v.$color-font;
+  text-transform: uppercase;
+}
+
+.program__catalog:active {
+  opacity: 0.3;
+}
+
+.program__catalog::after {
+  position: absolute;
+  content: "";
+  top: 33%;
+  right: -39px;
+  width: 24px;
+  height: 12px;
+  background-image: url("../image/arrow.svg");
+  background-repeat: no-repeat;
+}

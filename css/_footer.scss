@@ -1,0 +1,41 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  padding: 20px 20px;
+  background-color: v.$color-basic-container;
+}
+
+.footer__logo-text {
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid v.$color-container;
+  padding: 20px 0;
+}
+
+.footer__logo-text-img {
+  width: 128px;
+  height: 24px;
+}
+
+.footer__social {
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid v.$color-container;
+  padding: 20px 0 20px;
+  display: flex;
+  gap: 24px;
+}
+
+.footer__html-academy {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 16px;
+  font-family: v.$font2;
+  color: v.$color-font3;
+}
