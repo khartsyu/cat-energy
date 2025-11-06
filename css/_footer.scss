@@ -34,7 +34,11 @@
 .footer__html-academy {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
+}
+
+.footer__html-academy-name {
   font-size: 16px;
   font-family: v.$font2;
   color: v.$color-font3;
