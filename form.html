@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrap">
+      <a class="header__logo" href="#">
+        <picture class="header__logo-picture">
+          <source srcset="image/logo-tabl.svg" media="(min-width: 708px)">
+          <source srcset="image/logo-desk.svg" media="(min-width: 1220px)">
+          <img class="header__logo-img" src="image/logo-mobile.svg" alt="логотип рыжий кот">
+        </picture>
+      </a>
+      <img class="header__logo-text" src="image/logo-text.svg" alt="cat energy название компании">
+      <button class="header__button" type="button">
+        <span class="visually-hidden">кнопка открыть меню</span>
+      </button>
+    </div>
+
+  </header>
+
+  <main class="selection">
+    <section class="questionnaire">
+      <h1 class="questionnaire__title">Подбор программы</h1>
+      <p class="questionnaire__text">
+        Заполните анкету, и мы подберем
+        программу питания для вашего кота
+      </p>
+      <form class="questionnaire__form">
+        <label>
+         <span class="questionnaire__name">Имя:*</span>
+          <input class="questionnaire__input-field" type="text" placeholder="Барсик">
+        </label>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo-text">
+      <a href="#"><img class="footer__logo-text-img" src="image/logo-text.svg" alt="cat energy название компании"></a>
+    </div>
+    <div class="footer__social">
+      <a href="#"><img class="footer__social-icon" src="./image/vkontakte.svg" alt="мы в вконтакте"></a>
+      <a href="#"><img class="footer__social-icon" src="./image/youtube.svg" alt="мы в youtube"></a>
+      <a href="#"><img class="footer__social-icon" src="./image/telegram.svg" alt="мы в телеграм"></a>
+    </div>
+    <div class="footer__html-academy">
+      <a class="footer__html-academy-name" href="#">HTML Academy</a>
+      <img class="footer__html-academy-icon" src="./image/logo_html.svg" alt="html-academy логотип">
+    </div>
+  </footer>
+</body>
+
+</html>

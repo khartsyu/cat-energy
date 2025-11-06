@@ -19,6 +19,11 @@
   background-color: v.$color-basic-container;
 }
 
+.program__title {
+  display: flex;
+  gap: 20px;
+}
+
 .program__icon {
   position: absolute;
   top: 20px;
@@ -29,29 +34,7 @@
   background-color: v.$color-main;
 }
 
-.program__item:first-of-type::after {
-  position: absolute;
-  content: "";
-  top: 15px;
-  left: 35px;
-  width: 36px;
-  height: 50px;
-  background-image: url("../image/cat-slim.svg");
-  background-repeat: no-repeat;
-}
-
-.program__item:nth-of-type(2)::after {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 19px;
-  width: 67px;
-  height: 28px;
-  background-image: url("../image/cat-pro.svg");
-  background-repeat: no-repeat;
-}
-
-.program__title {
+.program__title-text {
   padding-left: 70px;
   margin-bottom: 29px;
   font-family: v.$font;
@@ -79,7 +62,15 @@
 }
 
 .program__catalog {
-  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.program__catalog:active {
+  opacity: 0.3;
+}
+
+.program__catalog-text {
   font-family: v.$font;
   font-size: 16px;
   line-height: 1;
@@ -87,17 +78,6 @@
   text-transform: uppercase;
 }
 
-.program__catalog:active {
-  opacity: 0.3;
-}
-
-.program__catalog::after {
-  position: absolute;
-  content: "";
-  top: 33%;
-  right: -39px;
-  width: 24px;
-  height: 12px;
-  background-image: url("../image/arrow.svg");
-  background-repeat: no-repeat;
+.program__catalog-icon {
+  fill: v.$color-font;
 }
