@@ -81,21 +81,6 @@
   min-width: 280px;
 }
 
-.example__slider-button {
-  position: absolute;
-  content: "";
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 40px;
-  border: 2px solid v.$color-special2;
-  border-radius: 20px;
-  background-color: v.$color-basic;
-  background-image: url("../image/vector1.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
 .example__slider-before {
   position: relative;
   width: 50%;
@@ -103,33 +88,11 @@
   overflow: hidden;
 }
 
-.example__slider-before::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: -2px;
-  width: 4px;
-  height: 100%;
-  background-color: v.$color-special2;
-  border-radius: 2px;
-}
-
 .example__slider-after {
   position: relative;
   width: 50%;
   height: 100%;
   overflow: hidden;
-}
-
-.example__slider-after::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -2px;
-  width: 4px;
-  height: 100%;
-  background-color: v.$color-special2;
-  border-radius: 2px;
 }
 
 .example__slider-img-before {
@@ -143,3 +106,27 @@
   object-fit: cover;
   object-position: 50% 100%;
 }
+
+.example__slider-tumbler {
+  position: absolute;
+  content: "";
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: v.$color-basic;
+}
+
+.example__slider-icon {
+  fill: v.$color-special2;
+}
+
+.example__slider-icon:hover {
+  fill: v.$color-main;
+}
+
+.example__slider-icon:active {
+  fill: v.$color-main-hover;
+}
+

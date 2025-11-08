@@ -12,13 +12,13 @@
   <header class="header">
     <div class="header__wrap">
       <a class="header__logo" href="#">
-        <picture class="header__logo-picture">
-          <source srcset="image/logo-tabl.svg" media="(min-width: 708px)">
-          <source srcset="image/logo-desk.svg" media="(min-width: 1220px)">
-          <img class="header__logo-img" src="image/logo-mobile.svg" alt="логотип рыжий кот">
-        </picture>
+        <svg class="header__logo__icon" viewBox="0 0 33 38" width="33" height="38">
+          <use href="sprite.svg#logo-mobile"></use>
+        </svg>
       </a>
-      <img class="header__logo-text" src="image/logo-text.svg" alt="cat energy название компании">
+      <svg class="header__logo__icon" viewBox="0 0 101 18" width="101" height="18">
+        <use href="sprite.svg#logo-text"></use>
+      </svg>
       <button class="header__button" type="button">
         <span class="visually-hidden">кнопка открыть меню</span>
       </button>
@@ -75,7 +75,7 @@
           </p>
           <div class="program__catalog">
             <a class="program__catalog-text" href="#">каталог slim</a>
-            <svg class="program__catalog-icon" viewBox="0 0 24 12" width="24" height="12">
+            <svg class="program__catalog-icon" viewBox="0 0 67 28" width="67" height="28">
               <use href="sprite.svg#arrow"></use>
             </svg>
           </div>
@@ -109,22 +109,42 @@
       </h1>
       <ul class="advantages__list">
         <li class="advantages__item">
-          Функциональное питание
-          содержит только полезные
-          питательные вещества.
+          <svg class="advantages__icon" viewBox="0 0 25 28" width="25" height="28">
+            <use href="sprite.svg#icon_sheet"></use>
+          </svg>
+          <p class="advantages__text">
+            Функциональное питание
+            содержит только полезные
+            питательные вещества.
+          </p>
         </li>
         <li class="advantages__item">
-          Выпускается в виде порошка,
-          который нужно лишь залить
-          кипятком и готово.
+          <svg class="advantages__icon" viewBox="0 0 26 29" width="26" height="29">
+            <use href="sprite.svg#icon_water"></use>
+          </svg>
+          <p class="advantages__text">
+            Выпускается в виде порошка,
+            который нужно лишь залить
+            кипятком и готово.
+          </p>
         </li>
         <li class="advantages__item">
-          Замените один-два приема
-          обычной еды на наше
-          функциональное питание.
+          <svg class="advantages__icon" viewBox="0 0 25 30" width="25" height="30">
+            <use href="sprite.svg#icon_eat"></use>
+          </svg>
+          <p class="advantages__text">
+            Замените один-два приема
+            обычной еды на наше
+            функциональное питание.
+          </p>
         </li>
         <li class="advantages__item">
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <svg class="advantages__icon" viewBox="0 0 27 31" width="27" height="31">
+            <use href="sprite.svg#icon_clock"></use>
+          </svg>
+          <p class="advantages__text">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </p>
         </li>
       </ul>
     </section>
@@ -157,8 +177,10 @@
           <img class="example__slider-img-after" src="image/png/viewport=mobile_state=after@1x.png"
             srcset="image/png/viewport=mobile_state=after@2x.png" alt="кот после похудения">
         </picture>
-        <div class="example__slider-button">
-          <span class="visually-hidden">ползунок тянуть влево-вправо</span>
+        <div class="example__slider-tumbler">
+           <svg class="example__slider-icon" viewBox="0 0 40 258" width="40" height="258">
+          <use href="sprite.svg#tumbler"></use>
+        </svg>
         </div>
       </div>
     </section>
@@ -180,17 +202,33 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logo-text">
-      <a href="#"><img class="footer__logo-text-img" src="image/logo-text.svg" alt="cat energy название компании"></a>
-    </div>
+    <a class="footer__logo-text" href="#">
+      <svg class="footer__logo-text-icon" viewBox="0 0 128 24" width="128" height="24">
+        <use href="sprite.svg#footer-logo"></use>
+      </svg>
+    </a>
     <div class="footer__social">
-      <a href="#"><img class="footer__social-icon" src="./image/vkontakte.svg" alt="мы в вконтакте"></a>
-      <a href="#"><img class="footer__social-icon" src="./image/youtube.svg" alt="мы в youtube"></a>
-      <a href="#"><img class="footer__social-icon" src="./image/telegram.svg" alt="мы в телеграм"></a>
+      <a href="#">
+        <svg class="footer__social__icon" viewBox="0 0 25 28" width="25" height="28">
+          <use href="sprite.svg#vkontakte"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="footer__social__icon" viewBox="0 0 25 28" width="25" height="28">
+          <use href="sprite.svg#youtube"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="footer__social__icon" viewBox="0 0 25 28" width="25" height="28">
+          <use href="sprite.svg#telegram"></use>
+        </svg>
+      </a>
     </div>
     <div class="footer__html-academy">
       <a class="footer__html-academy-name" href="#">HTML Academy</a>
-      <img class="footer__html-academy-icon" src="./image/logo_html.svg" alt="html-academy логотип">
+      <svg class="footer__social__icon" viewBox="0 0 27 34" width="27" height="34">
+        <use href="sprite.svg#logo_html"></use>
+      </svg>
     </div>
   </footer>
 </body>
