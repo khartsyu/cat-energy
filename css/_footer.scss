@@ -17,7 +17,7 @@
   padding: 20px 0;
 }
 
-.footer__logo-text-img {
+.footer__logo-text-icon {
   width: 128px;
   height: 24px;
 }
@@ -29,6 +29,10 @@
   padding: 20px 0 20px;
   display: flex;
   gap: 24px;
+}
+
+.footer__social__icon {
+  fill: v.$color-special2;
 }
 
 .footer__html-academy {
