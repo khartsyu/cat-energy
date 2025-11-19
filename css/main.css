@@ -602,15 +602,15 @@ legend {
 }
 
 .footer__social {
+  display: flex;
+  gap: 24px;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #D9D9D9;
   padding: 20px 0 20px;
-  display: flex;
-  gap: 24px;
 }
 
-.footer__social__icon {
+.footer__social-icon {
   fill: #666666;
 }
 
